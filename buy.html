@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy - ReWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-recycle"></i>
+                    <span>ReWear</span>
+                </a>
+            </div>
+
+            <div class="nav-center">
+                <a href="buy.html" class="nav-link active">Buy</a>
+                <a href="sell.html" class="nav-link">Sell</a>
+                <a href="rent.html" class="nav-link">Rent</a>
+            </div>
+
+            <div class="nav-right">
+                <button class="nav-icon" id="cameraBtn" title="Image Search">
+                    <i class="fas fa-camera"></i>
+                </button>
+                <a href="#" class="nav-icon" id="wishlistBtn" title="Wishlist">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="nav-icon" id="cartBtn" title="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="nav-icon" id="profileBtn" title="Profile">
+                    <i class="fas fa-user"></i>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="buy.html" class="mobile-link">Buy</a>
+        <a href="sell.html" class="mobile-link">Sell</a>
+        <a href="rent.html" class="mobile-link">Rent</a>
+        <a href="#" class="mobile-link">Profile</a>
+        <a href="#" class="mobile-link">Wishlist</a>
+        <a href="#" class="mobile-link">Cart</a>
+    </div>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <div class="category-container">
+            <a href="#" class="category-link">New Arrivals</a>
+            <div class="category-dropdown">
+                <a href="#" class="category-link">Clothing <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Kids</a>
+                </div>
+            </div>
+            <a href="#" class="category-link">Shoes & Accessories</a>
+            <a href="#" class="category-link">Handbags</a>
+            <a href="#" class="category-link">Goggles</a>
+            <a href="#" class="category-link">Jewelry</a>
+            <a href="#" class="category-link">Home & Living</a>
+        </div>
+    </div>
+
+    <!-- Buy Page Header -->
+    <section class="buy-header">
+        <div class="container">
+            <h1>Shop Sustainable Fashion</h1>
+            <p>Discover pre-loved items that are good for your wallet and the planet</p>
+        </div>
+    </section>
+
+    <!-- Filters and Products -->
+    <section class="buy-content">
+        <div class="container">
+            <div class="buy-layout">
+                <!-- Filters Sidebar -->
+                <div class="filters-sidebar">
+                    <h3>Filters</h3>
+
+                    <div class="filter-group">
+                        <h4>Category</h4>
+                        <label><input type="checkbox" value="tops"> Tops</label>
+                        <label><input type="checkbox" value="bottoms"> Bottoms</label>
+                        <label><input type="checkbox" value="dresses"> Dresses</label>
+                        <label><input type="checkbox" value="outerwear"> Outerwear</label>
+                        <label><input type="checkbox" value="accessories"> Accessories</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Brand</h4>
+                        <label><input type="checkbox" value="nike"> Nike</label>
+                        <label><input type="checkbox" value="levis"> Levi's</label>
+                        <label><input type="checkbox" value="zara"> Zara</label>
+                        <label><input type="checkbox" value="gap"> GAP</label>
+                        <label><input type="checkbox" value="forever21"> Forever 21</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <div class="price-range">
+                            <input type="range" min="0" max="200" value="100" class="price-slider">
+                            <div class="price-inputs">
+                                <input type="number" placeholder="Min" class="price-input">
+                                <input type="number" placeholder="Max" class="price-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Condition</h4>
+                        <label><input type="checkbox" value="excellent"> Excellent</label>
+                        <label><input type="checkbox" value="good"> Good</label>
+                        <label><input type="checkbox" value="fair"> Fair</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Size</h4>
+                        <div class="size-buttons">
+                            <button class="size-btn">XS</button>
+                            <button class="size-btn">S</button>
+                            <button class="size-btn">M</button>
+                            <button class="size-btn">L</button>
+                            <button class="size-btn">XL</button>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" id="applyFilters">Apply Filters</button>
+                    <button class="btn-secondary" id="clearFilters">Clear All</button>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-section">
+                    <div class="products-header">
+                        <div class="products-count">
+                            <span>Showing 24 products</span>
+                        </div>
+                        <div class="products-sort">
+                            <select>
+                                <option>Sort by: Featured</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Newest First</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Product cards will be dynamically generated -->
+                    </div>
+
+                    <div class="pagination">
+                        <button class="page-btn">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="qr-code">
+                        <img src="https://via.placeholder.com/100x100/22c55e/ffffff?text=QR" alt="QR Code">
+                    </div>
+                    <div class="footer-logo">
+                        <i class="fas fa-recycle"></i>
+                        <span>ReWear</span>
+                    </div>
+                </div>
+
+                <div class="footer-center">
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="app-badges">
+                        <img src="https://via.placeholder.com/120x40/22c55e/ffffff?text=App+Store" alt="App Store">
+                        <img src="https://via.placeholder.com/120x40/22c55e/ffffff?text=Google+Play" alt="Google Play">
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Sample product data
+        const products = [
+            {
+                id: 1,
+                name: "Classic Denim Jacket",
+                brand: "Levi's",
+                price: 45,
+                originalPrice: 120,
+                image: "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=300",
+                condition: "Excellent",
+                category: "Outerwear"
+            },
+            {
+                id: 2,
+                name: "Silk Blouse",
+                brand: "Anthropologie",
+                price: 28,
+                originalPrice: 89,
+                image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300",
+                condition: "Good",
+                category: "Tops"
+            },
+            {
+                id: 3,
+                name: "High-Waisted Jeans",
+                brand: "Madewell",
+                price: 52,
+                originalPrice: 135,
+                image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=300",
+                condition: "Excellent",
+                category: "Bottoms"
+            },
+            {
+                id: 4,
+                name: "Knit Sweater",
+                brand: "J.Crew",
+                price: 35,
+                originalPrice: 98,
+                image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=300",
+                condition: "Good",
+                category: "Tops"
+            },
+            {
+                id: 5,
+                name: "Floral Dress",
+                brand: "Free People",
+                price: 42,
+                originalPrice: 128,
+                image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300",
+                condition: "Excellent",
+                category: "Dresses"
+            },
+            {
+                id: 6,
+                name: "Leather Crossbody Bag",
+                brand: "Coach",
+                price: 65,
+                originalPrice: 195,
+                image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=300",
+                condition: "Good",
+                category: "Accessories"
+            }
+        ];
+
+        // Generate product cards
+        function generateProductCards() {
+            const grid = document.getElementById('productsGrid');
+            grid.innerHTML = '';
+
+            products.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <p class="brand">${product.brand}</p>
+                        <div class="price-info">
+                            <span class="price">$${product.price}</span>
+                            <span class="original-price">$${product.originalPrice}</span>
+                        </div>
+                        <div class="condition-badge">${product.condition}</div>
+                        <button class="heart-btn"><i class="far fa-heart"></i></button>
+                        <button class="btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            generateProductCards();
+        });
+    </script>
+</body>
+
+</html>

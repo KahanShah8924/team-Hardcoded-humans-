@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell - ReWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-recycle"></i>
+                    <span>ReWear</span>
+                </a>
+            </div>
+
+            <div class="nav-center">
+                <a href="buy.html" class="nav-link">Buy</a>
+                <a href="sell.html" class="nav-link active">Sell</a>
+                <a href="rent.html" class="nav-link">Rent</a>
+            </div>
+
+            <div class="nav-right">
+                <button class="nav-icon" id="cameraBtn" title="Image Search">
+                    <i class="fas fa-camera"></i>
+                </button>
+                <a href="#" class="nav-icon" id="wishlistBtn" title="Wishlist">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="nav-icon" id="cartBtn" title="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="nav-icon" id="profileBtn" title="Profile">
+                    <i class="fas fa-user"></i>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="buy.html" class="mobile-link">Buy</a>
+        <a href="sell.html" class="mobile-link">Sell</a>
+        <a href="rent.html" class="mobile-link">Rent</a>
+        <a href="#" class="mobile-link">Profile</a>
+        <a href="#" class="mobile-link">Wishlist</a>
+        <a href="#" class="mobile-link">Cart</a>
+    </div>
+
+    <!-- Sell Page Header -->
+    <section class="sell-header">
+        <div class="container">
+            <div class="sell-hero">
+                <div class="sell-hero-content">
+                    <h1>Turn Your Closet into Cash</h1>
+                    <p>Get 50% off clean-out fees on your first two sales! Let us handle everything from inspection to
+                        shipping.</p>
+                    <button class="btn-primary">Start Selling Now</button>
+                </div>
+                <div class="sell-hero-image">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600" alt="Sell Your Items">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <i class="fas fa-box"></i>
+                    <h3>Pack Your Items</h3>
+                    <p>Fill our prepaid shipping bag with your gently used clothing and accessories.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>We Ship for Free</h3>
+                    <p>Schedule a pickup or drop off your bag at any UPS location - shipping is on us!</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <i class="fas fa-search"></i>
+                    <h3>We Inspect & Price</h3>
+                    <p>Our experts carefully inspect each item and price it competitively for maximum value.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>You Get Paid</h3>
+                    <p>Earn up to 80% of the selling price when your items sell. Get paid via PayPal or check.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Accept -->
+    <section class="what-we-accept">
+        <div class="container">
+            <h2 class="section-title">What We Accept</h2>
+            <div class="acceptance-grid">
+                <div class="acceptance-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Clothing</h3>
+                    <ul>
+                        <li>Tops & Blouses</li>
+                        <li>Dresses & Skirts</li>
+                        <li>Pants & Jeans</li>
+                        <li>Outerwear</li>
+                        <li>Activewear</li>
+                    </ul>
+                </div>
+                <div class="acceptance-card">
+                    <i class="fas fa-shoe-prints"></i>
+                    <h3>Shoes & Accessories</h3>
+                    <ul>
+                        <li>Heels & Flats</li>
+                        <li>Sneakers & Boots</li>
+                        <li>Handbags & Purses</li>
+                        <li>Jewelry</li>
+                        <li>Scarves & Belts</li>
+                    </ul>
+                </div>
+                <div class="acceptance-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Home & Living</h3>
+                    <ul>
+                        <li>Home Decor</li>
+                        <li>Kitchen Items</li>
+                        <li>Books & Media</li>
+                        <li>Toys & Games</li>
+                        <li>Electronics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Fees -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Pricing & Fees</h2>
+            <div class="pricing-content">
+                <div class="pricing-info">
+                    <h3>Standard Clean-Out Fees</h3>
+                    <div class="fee-breakdown">
+                        <div class="fee-item">
+                            <span class="fee-label">Processing Fee</span>
+                            <span class="fee-amount">$2.00</span>
+                        </div>
+                        <div class="fee-item">
+                            <span class="fee-label">Commission (30%)</span>
+                            <span class="fee-amount">30% of sale price</span>
+                        </div>
+                        <div class="fee-item">
+                            <span class="fee-label">Shipping</span>
+                            <span class="fee-amount">FREE</span>
+                        </div>
+                    </div>
+                    <div class="special-offer">
+                        <h4>🎉 Special Offer</h4>
+                        <p>Get 50% off clean-out fees on your first two sales!</p>
+                    </div>
+                </div>
+                <div class="pricing-calculator">
+                    <h3>Earnings Calculator</h3>
+                    <div class="calculator-form">
+                        <label>Item Original Price:</label>
+                        <input type="number" id="originalPrice" placeholder="Enter original price">
+                        <label>Expected Sale Price:</label>
+                        <input type="number" id="salePrice" placeholder="Enter expected sale price">
+                        <button class="btn-primary" onclick="calculateEarnings()">Calculate Earnings</button>
+                        <div class="calculation-result" id="calculationResult"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100" alt="Sarah M.">
+                    </div>
+                    <div class="story-content">
+                        <h4>Sarah M.</h4>
+                        <p>"I made $247 from my first clean-out! The process was so easy and the team was incredibly
+                            helpful."</p>
+                        <div class="story-stats">
+                            <span>Items sold: 12</span>
+                            <span>Total earned: $247</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Mike R.">
+                    </div>
+                    <div class="story-content">
+                        <h4>Mike R.</h4>
+                        <p>"Cleaned out my closet and made $180. The free shipping and easy process made it a
+                            no-brainer!"</p>
+                        <div class="story-stats">
+                            <span>Items sold: 8</span>
+                            <span>Total earned: $180</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-avatar">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Emma L.">
+                    </div>
+                    <div class="story-content">
+                        <h4>Emma L.</h4>
+                        <p>"I was skeptical at first, but I earned $320 from items I was going to donate. Amazing!"</p>
+                        <div class="story-stats">
+                            <span>Items sold: 15</span>
+                            <span>Total earned: $320</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What condition do items need to be in?</h3>
+                    <p>We accept items in good, excellent, or like-new condition. Items should be clean, free of stains,
+                        tears, or excessive wear.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does the process take?</h3>
+                    <p>From shipping to getting paid typically takes 2-3 weeks. We'll notify you as soon as your items
+                        are listed for sale.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if my items don't sell?</h3>
+                    <p>Items that don't sell within 90 days are donated to charity partners. You can also request items
+                        to be returned for a small fee.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I get paid?</h3>
+                    <p>You can choose to be paid via PayPal or check. Payments are processed monthly for items that have
+                        sold.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="sell-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Turn Your Closet into Cash?</h2>
+                <p>Join thousands of sellers who are earning money from items they no longer need.</p>
+                <button class="btn-primary">Start Your Clean-Out</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="qr-code">
+                        <img src="https://via.placeholder.com/100x100/22c55e/ffffff?text=QR" alt="QR Code">
+                    </div>
+                    <div class="footer-logo">
+                        <i class="fas fa-recycle"></i>
+                        <span>ReWear</span>
+                    </div>
+                </div>
+
+                <div class="footer-center">
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="app-badges">
+                        <img src="https://via.placeholder.com/120x40/22c55e/ffffff?text=App+Store" alt="App Store">
+                        <img src="https://via.placeholder.com/120x40/22c55e/ffffff?text=Google+Play" alt="Google Play">
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        function calculateEarnings() {
+            const originalPrice = parseFloat(document.getElementById('originalPrice').value);
+            const salePrice = parseFloat(document.getElementById('salePrice').value);
+
+            if (originalPrice && salePrice) {
+                const processingFee = 2.00;
+                const commission = salePrice * 0.30;
+                const totalFees = processingFee + commission;
+                const earnings = salePrice - totalFees;
+                const savings = originalPrice - salePrice;
+
+                const result = document.getElementById('calculationResult');
+                result.innerHTML = `
+                    <div class="calculation-breakdown">
+                        <h4>Earnings Breakdown:</h4>
+                        <p><strong>Sale Price:</strong> $${salePrice.toFixed(2)}</p>
+                        <p><strong>Processing Fee:</strong> $${processingFee.toFixed(2)}</p>
+                        <p><strong>Commission (30%):</strong> $${commission.toFixed(2)}</p>
+                        <p><strong>Total Fees:</strong> $${totalFees.toFixed(2)}</p>
+                        <p><strong>Your Earnings:</strong> $${earnings.toFixed(2)}</p>
+                        <p><strong>You Saved:</strong> $${savings.toFixed(2)} vs. buying new</p>
+                    </div>
+                `;
+            }
+        }
+    </script>
+</body>
+
+</html>

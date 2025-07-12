@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReWear - Style Sustainably. Wear Again.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-recycle"></i>
+                    <span>ReWear</span>
+                </a>
+            </div>
+
+            <div class="nav-center">
+                <a href="buy.html" class="nav-link">Buy</a>
+                <a href="sell.html" class="nav-link">Sell</a>
+                <a href="rent.html" class="nav-link">Rent</a>
+            </div>
+
+            <div class="nav-right">
+                <button class="nav-icon" id="cameraBtn" title="Image Search">
+                    <i class="fas fa-camera"></i>
+                </button>
+                <a href="#" class="nav-icon" id="wishlistBtn" title="Wishlist">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="nav-icon" id="cartBtn" title="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="nav-icon" id="profileBtn" title="Profile">
+                    <i class="fas fa-user"></i>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="buy.html" class="mobile-link">Buy</a>
+        <a href="sell.html" class="mobile-link">Sell</a>
+        <a href="rent.html" class="mobile-link">Rent</a>
+        <a href="#" class="mobile-link">Profile</a>
+        <a href="#" class="mobile-link">Wishlist</a>
+        <a href="#" class="mobile-link">Cart</a>
+    </div>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <div class="category-container">
+            <a href="#" class="category-link">New Arrivals</a>
+            <div class="category-dropdown">
+                <a href="#" class="category-link">Clothing <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Kids</a>
+                </div>
+            </div>
+            <a href="#" class="category-link">Shoes & Accessories</a>
+            <a href="#" class="category-link">Handbags</a>
+            <a href="#" class="category-link">Goggles</a>
+            <a href="#" class="category-link">Jewelry</a>
+            <a href="#" class="category-link">Home & Living</a>
+        </div>
+    </div>
+
+    <!-- Sale Banner -->
+    <section class="sale-banner">
+        <div class="banner-content">
+            <h1>Up to 50% Off on Select Items!</h1>
+            <p>Discover amazing deals on pre-loved fashion</p>
+            <button class="btn-primary">Shop Now</button>
+        </div>
+        <div class="banner-image">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800" alt="Sale Banner">
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400" alt="Tops">
+                    <h3>Tops</h3>
+                    <a href="#" class="btn-secondary">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=400" alt="Jeans">
+                    <h3>Jeans</h3>
+                    <a href="#" class="btn-secondary">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400" alt="Dresses">
+                    <h3>Dresses</h3>
+                    <a href="#" class="btn-secondary">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400" alt="Accessories">
+                    <h3>Accessories</h3>
+                    <a href="#" class="btn-secondary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Panel -->
+    <section class="seasonal-panel">
+        <div class="container">
+            <h2 class="section-title">Seasonal Picks</h2>
+            <div class="seasonal-carousel">
+                <button class="carousel-btn prev" id="seasonalPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-container" id="seasonalCarousel">
+                    <div class="seasonal-card">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400"
+                            alt="Summer Collection">
+                        <div class="card-content">
+                            <h3>Summer Collection</h3>
+                            <p>Light and breezy styles for the warm weather</p>
+                            <button class="btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="seasonal-card">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400"
+                            alt="Winter Collection">
+                        <div class="card-content">
+                            <h3>Winter Collection</h3>
+                            <p>Cozy and warm pieces for the cold season</p>
+                            <button class="btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="seasonalNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hues on the Horizon -->
+    <section class="hues-section">
+        <div class="container">
+            <h2 class="section-title">Hues on the Horizon</h2>
+            <div class="color-palette">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: linear-gradient(45deg, #FF6B6B, #FF8E8E)"></div>
+                    <h3>Sunset Coral</h3>
+                    <p>Warm and vibrant tones</p>
+                    <button class="btn-secondary">Shop Now</button>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: linear-gradient(45deg, #4ECDC4, #6EE7DF)"></div>
+                    <h3>Ocean Mint</h3>
+                    <p>Cool and refreshing shades</p>
+                    <button class="btn-secondary">Shop Now</button>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: linear-gradient(45deg, #FFE66D, #FFF4A3)"></div>
+                    <h3>Golden Hour</h3>
+                    <p>Bright and cheerful yellows</p>
+                    <button class="btn-secondary">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Snap & Search -->
+    <section class="snap-search">
+        <div class="container">
+            <h2 class="section-title">Snap & Search It</h2>
+            <div class="search-content">
+                <div class="search-info">
+                    <p>Find similar items by uploading a photo or taking a picture</p>
+                    <button class="btn-primary" id="imageSearchBtn">
+                        <i class="fas fa-camera"></i>
+                        Try Image Search
+                    </button>
+                </div>
+                <div class="search-image">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400" alt="Image Search">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Favorited -->
+    <section class="most-favorited">
+        <div class="container">
+            <h2 class="section-title">Most Favorited</h2>
+            <div class="products-carousel">
+                <button class="carousel-btn prev" id="favoritesPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-container" id="favoritesCarousel">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=300"
+                            alt="Denim Jacket">
+                        <div class="product-info">
+                            <h3>Classic Denim Jacket</h3>
+                            <p class="brand">Levi's</p>
+                            <p class="price">$45</p>
+                            <button class="heart-btn"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300" alt="Silk Blouse">
+                        <div class="product-info">
+                            <h3>Silk Blouse</h3>
+                            <p class="brand">Anthropologie</p>
+                            <p class="price">$28</p>
+                            <button class="heart-btn"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=300"
+                            alt="High-Waisted Jeans">
+                        <div class="product-info">
+                            <h3>High-Waisted Jeans</h3>
+                            <p class="brand">Madewell</p>
+                            <p class="price">$52</p>
+                            <button class="heart-btn"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=300"
+                            alt="Knit Sweater">
+                        <div class="product-info">
+                            <h3>Knit Sweater</h3>
+                            <p class="brand">J.Crew</p>
+                            <p class="price">$35</p>
+                            <button class="heart-btn"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="favoritesNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prints That Pop -->
+    <section class="prints-section">
+        <div class="container">
+            <h2 class="section-title">Prints That Pop</h2>
+            <div class="prints-grid">
+                <div class="print-card" data-pattern="polka">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300" alt="Polka Dots">
+                    <h3>Polka Dots</h3>
+                    <button class="btn-secondary">Shop Now</button>
+                </div>
+                <div class="print-card" data-pattern="gingham">
+                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300" alt="Gingham">
+                    <h3>Gingham</h3>
+                    <button class="btn-secondary">Shop Now</button>
+                </div>
+                <div class="print-card" data-pattern="florals">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300" alt="Florals">
+                    <h3>Florals</h3>
+                    <button class="btn-secondary">Shop Now</button>
+                </div>
+                <div class="print-card" data-pattern="denim">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=300" alt="Denim">
+                    <h3>Denim</h3>
+                    <button class="btn-secondary">Shop Now</button>
+                </div>
+                <div class="print-card" data-pattern="stripes">
+                    <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=300" alt="Stripes">
+                    <h3>Stripes</h3>
+                    <button class="btn-secondary">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clean Out Fees -->
+    <section class="clean-out-section">
+        <div class="container">
+            <div class="clean-out-content">
+                <div class="clean-out-info">
+                    <h2>Get 50% Off Clean-Out Fees!</h2>
+                    <p>Let us inspect, price, and ship your items from your doorstep. You get 50% off our standard fees
+                        on your first two sales!</p>
+                    <button class="btn-primary">Start Selling</button>
+                </div>
+                <div class="clean-out-image">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400" alt="Clean Out">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Outfit Add-ons -->
+    <section class="trending-addons">
+        <div class="container">
+            <h2 class="section-title">Trending Outfit Add-ons</h2>
+            <div class="addons-carousel">
+                <button class="carousel-btn prev" id="addonsPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-container" id="addonsCarousel">
+                    <div class="addon-card">
+                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=200" alt="Hats">
+                        <h3>Hats</h3>
+                        <button class="btn-secondary">Shop Now</button>
+                    </div>
+                    <div class="addon-card">
+                        <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=200" alt="Sunglasses">
+                        <h3>Sunglasses</h3>
+                        <button class="btn-secondary">Shop Now</button>
+                    </div>
+                    <div class="addon-card">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=200" alt="Belts">
+                        <h3>Belts</h3>
+                        <button class="btn-secondary">Shop Now</button>
+                    </div>
+                    <div class="addon-card">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=200" alt="Scarves">
+                        <h3>Scarves</h3>
+                        <button class="btn-secondary">Shop Now</button>
+                    </div>
+                    <div class="addon-card">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=200" alt="Jewelry">
+                        <h3>Jewelry</h3>
+                        <button class="btn-secondary">Shop Now</button>
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="addonsNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Brands Spotlight -->
+    <section class="brands-section">
+        <div class="container">
+            <h2 class="section-title">Top Brands Spotlight</h2>
+            <div class="brands-grid">
+                <div class="brand-card" data-brand="nike">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200" alt="Nike">
+                    <h3>Nike</h3>
+                </div>
+                <div class="brand-card" data-brand="levis">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=200" alt="Levi's">
+                    <h3>Levi's</h3>
+                </div>
+                <div class="brand-card" data-brand="zara">
+                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=200" alt="Zara">
+                    <h3>Zara</h3>
+                </div>
+                <div class="brand-card" data-brand="gap">
+                    <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=200" alt="GAP">
+                    <h3>GAP</h3>
+                </div>
+                <div class="brand-card" data-brand="forever21">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=200" alt="Forever 21">
+                    <h3>Forever 21</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter & Gift Cards -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-info">
+                    <h2>Stay Connected</h2>
+                    <p>Get the latest updates on new arrivals and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="gift-cards">
+                    <h3>Gift Cards</h3>
+                    <p>Give the gift of sustainable fashion</p>
+                    <button class="btn-secondary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awareness Section -->
+    <section class="awareness-section">
+        <div class="container">
+            <div class="awareness-content">
+                <h2>Thrift More. Waste Less.</h2>
+                <p class="tagline">Find it. Flaunt it. Set it free.</p>
+                <a href="about.html" class="btn-primary">About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="qr-code">
+                        <img src="https://via.placeholder.com/100x100/22c55e/ffffff?text=QR" alt="QR Code">
+                    </div>
+                    <div class="footer-logo">
+                        <i class="fas fa-recycle"></i>
+                        <span>ReWear</span>
+                    </div>
+                </div>
+
+                <div class="footer-center">
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="app-badges">
+                        <img src="https://via.placeholder.com/120x40/22c55e/ffffff?text=App+Store" alt="App Store">
+                        <img src="https://via.placeholder.com/120x40/22c55e/ffffff?text=Google+Play" alt="Google Play">
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Search Modal -->
+    <div class="modal" id="imageSearchModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Image Search</h2>
+            <div class="search-options">
+                <button class="btn-primary" id="uploadBtn">
+                    <i class="fas fa-upload"></i>
+                    Upload Image
+                </button>
+                <button class="btn-secondary" id="cameraBtn">
+                    <i class="fas fa-camera"></i>
+                    Take Photo
+                </button>
+            </div>
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

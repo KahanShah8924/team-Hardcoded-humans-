@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent - ReWear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-recycle"></i>
+                    <span>ReWear</span>
+                </a>
+            </div>
+
+            <div class="nav-center">
+                <a href="buy.html" class="nav-link">Buy</a>
+                <a href="sell.html" class="nav-link">Sell</a>
+                <a href="rent.html" class="nav-link active">Rent</a>
+            </div>
+
+            <div class="nav-right">
+                <button class="nav-icon" id="cameraBtn" title="Image Search">
+                    <i class="fas fa-camera"></i>
+                </button>
+                <a href="#" class="nav-icon" id="wishlistBtn" title="Wishlist">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="nav-icon" id="cartBtn" title="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#" class="nav-icon" id="profileBtn" title="Profile">
+                    <i class="fas fa-user"></i>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="buy.html" class="mobile-link">Buy</a>
+        <a href="sell.html" class="mobile-link">Sell</a>
+        <a href="rent.html" class="mobile-link">Rent</a>
+        <a href="#" class="mobile-link">Profile</a>
+        <a href="#" class="mobile-link">Wishlist</a>
+        <a href="#" class="mobile-link">Cart</a>
+    </div>
+
+    <!-- Rent Page Header -->
+    <section class="rent-header">
+        <div class="container">
+            <div class="rent-hero">
+                <div class="rent-hero-content">
+                    <h1>Rent the Perfect Outfit</h1>
+                    <p>Access designer fashion without the commitment. Rent for special occasions, events, or just to
+                        try something new.</p>
+                    <button class="btn-primary">Browse Rentals</button>
+                </div>
+                <div class="rent-hero-image">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600" alt="Rent Fashion">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Categories -->
+    <section class="rental-categories">
+        <div class="container">
+            <h2 class="section-title">Rental Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400"
+                        alt="Special Occasions">
+                    <div class="category-content">
+                        <h3>Special Occasions</h3>
+                        <p>Weddings, parties, and formal events</p>
+                        <span class="rental-price">From $25/day</span>
+                        <button class="btn-secondary">Browse</button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400" alt="Work Wear">
+                    <div class="category-content">
+                        <h3>Work Wear</h3>
+                        <p>Professional attire for the office</p>
+                        <span class="rental-price">From $15/day</span>
+                        <button class="btn-secondary">Browse</button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=400" alt="Casual Wear">
+                    <div class="category-content">
+                        <h3>Casual Wear</h3>
+                        <p>Comfortable everyday fashion</p>
+                        <span class="rental-price">From $10/day</span>
+                        <button class="btn-secondary">Browse</button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=400" alt="Accessories">
+                    <div class="category-content">
+                        <h3>Accessories</h3>
+                        <p>Jewelry, bags, and statement pieces</p>
+                        <span class="rental-price">From $8/day</span>
+                        <button class="btn-secondary">Browse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Rental Works -->
+    <section class="rental-process">
+        <div class="container">
+            <h2 class="section-title">How Rental Works</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>1. Choose Your Items</h3>
+                    <p>Browse our curated collection of designer and premium items available for rent.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>2. Select Dates</h3>
+                    <p>Choose your rental period - from 1 day to 2 weeks. Longer rentals get better rates.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>3. Free Shipping</h3>
+                    <p>We ship your items to you with free shipping and include a prepaid return label.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>4. Easy Returns</h3>
+                    <p>Simply use the included return label to send items back. No dry cleaning needed!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Rentals -->
+    <section class="featured-rentals">
+        <div class="container">
+            <h2 class="section-title">Featured Rentals</h2>
+            <div class="rentals-grid">
+                <div class="rental-card">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300" alt="Evening Gown">
+                    <div class="rental-info">
+                        <h3>Designer Evening Gown</h3>
+                        <p class="brand">Rent the Runway</p>
+                        <div class="rental-pricing">
+                            <span class="rental-price">$45/day</span>
+                            <span class="retail-price">Retail: $450</span>
+                        </div>
+                        <div class="rental-details">
+                            <span class="size">Size: M</span>
+                            <span class="condition">Excellent</span>
+                        </div>
+                        <button class="btn-primary">Rent Now</button>
+                    </div>
+                </div>
+                <div class="rental-card">
+                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300" alt="Business Suit">
+                    <div class="rental-info">
+                        <h3>Professional Business Suit</h3>
+                        <p class="brand">Banana Republic</p>
+                        <div class="rental-pricing">
+                            <span class="rental-price">$25/day</span>
+                            <span class="retail-price">Retail: $280</span>
+                        </div>
+                        <div class="rental-details">
+                            <span class="size">Size: L</span>
+                            <span class="condition">Good</span>
+                        </div>
+                        <button class="btn-primary">Rent Now</button>
+                    </div>
+                </div>
+                <div class="rental-card">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=300" alt="Casual Dress">
+                    <div class="rental-info">
+                        <h3>Casual Summer Dress</h3>
+                        <p class="brand">Free People</p>
+                        <div class="rental-pricing">
+                            <span class="rental-price">$18/day</span>
+                            <span class="retail-price">Retail: $120</span>
+                        </div>
+                        <div class="rental-details">
+                            <span class="size">Size: S</span>
+                            <span class="condition">Excellent</span>
+                        </div>
+                        <button class="btn-primary">Rent Now</button>
+                    </div>
+                </div>
+                <div class="rental-card">
+                    <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=300" alt="Denim Jacket">
+                    <div class="rental-info">
+                        <h3>Vintage Denim Jacket</h3>
+                        <p class="brand">Levi's</p>
+                        <div class="rental-pricing">
+                            <span class="rental-price">$12/day</span>
+                            <span class="retail-price">Retail: $95</span>
+                        </div>
+                        <div class="rental-details">
+                            <span class="size">Size: M</span>
+                            <span class="condition">Good</span>
+                        </div>
+                        <button class="btn-primary">Rent Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Benefits -->
+    <section class="rental-benefits">
+        <div class="container">
+            <h2 class="section-title">Why Rent with ReWear?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainable Fashion</h3>
+                    <p>Reduce your environmental impact by renting instead of buying new items for every occasion.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Save Money</h3>
+                    <p>Access designer fashion at a fraction of the retail price. No need to buy expensive items you'll
+                        only wear once.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Endless Variety</h3>
+                    <p>Try new styles and trends without commitment. Our rotating inventory means fresh options every
+                        week.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>Convenient Service</h3>
+                    <p>Free shipping, easy returns, and no dry cleaning required. We handle all the logistics for you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental FAQ -->
+    <section class="rental-faq">
+        <div class="container">
+            <h2 class="section-title">Rental FAQ</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long can I rent items?</h3>
+                    <p>Rental periods range from 1 day to 2 weeks. Longer rentals typically offer better daily rates.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I damage an item?</h3>
+                    <p>We understand accidents happen. Minor wear is expected, but significant damage may incur a repair
+                        fee.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I need to dry clean items?</h3>
+                    <p>No! We handle all cleaning. Simply return items as-is using the prepaid return label.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I extend my rental?</h3>
+                    <p>Yes, you can extend your rental up to 48 hours before the return date, subject to availability.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>What sizes are available?</h3>
+                    <p>We offer sizes XS-XXL for most items. Check individual listings for specific size availability.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does shipping work?</h3>
+                    <p>We offer free shipping on all rentals. Items arrive 1-2 business days before your rental start
+                        date.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental CTA -->
+    <section class="rental-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Try Rental Fashion?</h2>
+                <p>Join thousands of customers who are saving money and reducing waste through fashion rental.</p>
+                <button class="btn-primary">Start Renting</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="qr-code">
+                        <img src="https://via.placeholder.com/100x100/22c55e/ffffff?text=QR" alt="QR Code">
+                    </div>
+                    <div class="footer-logo">
+                        <i class="fas fa-recycle"></i>
+                        <span>ReWear</span>
+                    </div>
+                </div>
+
+                <div class="footer-center">
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="app-badges">
+                        <img src="https://via.placeholder.com/120x40/22c55e/ffffff?text=App+Store" alt="App Store">
+                        <img src="https://via.placeholder.com/120x40/22c55e/ffffff?text=Google+Play" alt="Google Play">
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
